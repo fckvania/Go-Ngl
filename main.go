@@ -1,9 +1,11 @@
 package main
 
 import (
+        "bufio"
 	"fmt"
 	"log"
 	"net/http"
+        "os"
 	"strings"
 )
 
@@ -40,10 +42,11 @@ func main() {
 		panic("Please Masukan Url")
 	}
 	fmt.Print("[+] Please Enter Teks: ")
-	if _, err := fmt.Scanln(&teks); err != nil {
-		panic(err)
+	scanner := bufio.NewScanner(os.Stdin)
+	if scanner.Scan() {
+		teks = string(scanner.Text())
 	}
-	fmt.Print("[+] Total Spam: ")
+        fmt.Print("[+] Total Spam: ")
 	if _, err := fmt.Scanln(&total); err != nil {
 		panic(err)
 	}
