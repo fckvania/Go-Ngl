@@ -10,7 +10,7 @@ import (
 )
 
 func GoNgl(Url string, teks string) {
-	req, err := http.Post(Url, "application/json", strings.NewReader(`{"question": " `+teks+`"}`))
+	req, err := http.Post(Url, "application/json", strings.NewReader(`{"question": " `+ teks +`"}`))
 	req.Header.Set("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36")
 	if err != nil || req.StatusCode != 200 {
 		log.Println("StatusCode: ", req.StatusCode, " || StatusText: Gagal")
