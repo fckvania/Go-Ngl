@@ -7,6 +7,7 @@ import (
 	"net/http"
         "os"
 	"strings"
+        "time"
 )
 
 func GoNgl(Url string, teks string) {
