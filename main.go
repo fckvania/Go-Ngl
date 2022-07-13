@@ -7,6 +7,7 @@ import (
 	"net/http"
         "os"
 	"strings"
+        "time"
 )
 
 func GoNgl(Url string, teks string) {
@@ -52,5 +53,6 @@ func main() {
 	}
 	for i := 0; i < total; i++ {
 		GoNgl(url, teks)
+                time.Sleep(1 * time.Second)
 	}
 }
