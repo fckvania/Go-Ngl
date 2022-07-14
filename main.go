@@ -29,7 +29,7 @@ func init() {
 ██║   ██║██║   ██║    ╚════╝    ██║╚██╗██║██║   ██║██║     
 ╚██████╔╝╚██████╔╝              ██║ ╚████║╚██████╔╝███████╗
 ╚═════╝  ╚═════╝               ╚═╝  ╚═══╝ ╚═════╝ ╚══════╝`)
-	fmt.Printf("Create By : %sVnia%s - %sgithub.com/fckvania%s\n", "\033[31m", "\033[0m", "\033[34m", "\033[0m")
+	fmt.Printf("Create By : %sVania%s - %sgithub.com/fckvania%s\n", "\033[31m", "\033[0m", "\033[34m", "\033[0m")
 }
 
 func main() {
