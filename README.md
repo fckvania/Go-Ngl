@@ -9,3 +9,4 @@ Note : Gunakan dengan Bijak
 2. open via cmd/terminal
 3. run `go run main.go`
 4. Iya
+5. Ga
